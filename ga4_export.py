@@ -71,7 +71,7 @@ def main():
         es = Elasticsearch(
             ELASTICSEARCH_HOST,
             api_key=ELASTICSEARCH_API_KEY,
-            verify_certs=False  # Use carefully; disables SSL cert validation
+            verify_certs=False  # Use only if self hosting ssl certificates as it disables SSL cert validation. If using normal SSL, then change to True
         )
         if not es.ping():
             raise Exception("Elasticsearch server not responding")
