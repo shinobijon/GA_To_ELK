@@ -22,6 +22,7 @@ This project fetches Google Analytics 4 (GA4) data and exports it to an Elastics
 2. **Prepare Environment**
 
    - Copy `.env.example` to `.env`
+   - Uploaded the JSON key to your environment
    - Edit `.env` with your actual values:
      - GA4 Property ID
      - Path to your service account JSON key (mounted as `/app/service-account.json` in Docker)
